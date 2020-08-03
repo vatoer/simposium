@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_sales">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.starganteknologi.simposium.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_sales"
+        android:name="com.starganteknologi.simposium.ui.sales.SalesFragment"
+        android:label="@string/title_sales"
+        tools:layout="@layout/fragment_sales" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
