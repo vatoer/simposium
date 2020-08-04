@@ -1,6 +1,7 @@
 package com.starganteknologi.simposium.ui.login
 
 import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -14,6 +15,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.starganteknologi.simposium.MainActivity
 
 import com.starganteknologi.simposium.R
 
@@ -59,9 +61,12 @@ class LoginActivity : AppCompatActivity() {
                 updateUiWithUser(loginResult.success)
             }
             setResult(Activity.RESULT_OK)
-
+            val intent = Intent(this, MainActivity::class.java).apply {
+                putExtra("EXTRA_MESSAGE", "message")
+            }
+            //startActivity(intent)
             //Complete and destroy login activity once successful
-            finish()
+            //finish()
         })
 
         username.afterTextChanged {
