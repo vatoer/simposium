@@ -1,5 +1,6 @@
-package com.starganteknologi.simposium.data
+package com.starganteknologi.simposium.data.remote
 
+import com.starganteknologi.simposium.data.Result
 import com.starganteknologi.simposium.data.model.LoggedInUser
 
 /**

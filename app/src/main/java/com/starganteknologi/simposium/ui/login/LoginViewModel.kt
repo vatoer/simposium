@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.starganteknologi.simposium.data.LoginRepository
+import com.starganteknologi.simposium.data.remote.LoginRepository
 import com.starganteknologi.simposium.data.Result
 
 import com.starganteknologi.simposium.R

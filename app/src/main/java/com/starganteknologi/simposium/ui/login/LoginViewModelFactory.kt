@@ -2,8 +2,8 @@ package com.starganteknologi.simposium.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.starganteknologi.simposium.data.LoginDataSource
-import com.starganteknologi.simposium.data.LoginRepository
+import com.starganteknologi.simposium.data.remote.LoginDataSource
+import com.starganteknologi.simposium.data.remote.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

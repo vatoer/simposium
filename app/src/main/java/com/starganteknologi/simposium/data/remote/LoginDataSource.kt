@@ -1,5 +1,6 @@
-package com.starganteknologi.simposium.data
+package com.starganteknologi.simposium.data.remote
 
+import com.starganteknologi.simposium.data.Result
 import com.starganteknologi.simposium.data.model.LoggedInUser
 import java.io.IOException
 
@@ -14,7 +15,12 @@ class LoginDataSource {
             val fakeUser = LoggedInUser(java.util.UUID.randomUUID().toString(), "Jane Doe")
             return Result.Success(fakeUser)
         } catch (e: Throwable) {
-            return Result.Error(IOException("Error logging in", e))
+            return Result.Error(
+                IOException(
+                    "Error logging in",
+                    e
+                )
+            )
         }
     }
 
